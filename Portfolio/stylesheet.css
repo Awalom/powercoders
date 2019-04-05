@@ -1,0 +1,62 @@
+body {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* ========== Containers and headers =============*/
+
+#header {
+  background-color: bisque;
+  height: 110px;
+  widows: 100%;
+  position: relative;
+}
+#nav_container, #nav {
+  background: black;
+}
+#nav_container {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#nav {
+  width: 450px;
+  min-width: 450px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+/* ========== navigation bottom =============*/
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  width: 80px;
+  display: block;
+  color: white;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border-left: 1px solid gray;
+}
+#nav ul li a:hover {
+  background-color: white;
+  color:black;
+  transform: scale(1.2);
+  box-shadow: 5px 10px #888888;
+}
