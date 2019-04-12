@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .flex {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3em;
+      background-color: #fff;
+    }
+
+    .flex-child {
+      width: 100px;
+      height: 100px;
+    }
+
+
+
+    #one {
+      box-shadow: 0 0 20px 3px #ccc;
+    }
+
+    #two {
+      box-shadow: 5px 5px 20px 3px rgba(150, 150, 150, .5);
+    }
+
+    #three {
+      box-shadow: 1px 1px 10px 1px rgba(150, 150, 150, .5) inset;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div id="one" class="flex-child">Box 1</div>
+    <div id="two" class="flex-child">Box 2</div>
+    <div id="three" class="flex-child">Box 3</div>
+    <div id="four" class="flex-child">Box 4</div>
+  </div>
+  <section>
+    <h2>Exemples</h2>
+
+    <div id="c1" class="container">
+      <p class="box" id="shadow-1">
+        C’est bien facile à dire « Buvez-moi, » mais Alice était trop fine pour obéir à l’aveuglette.
+      </p>
+      <p class="box" id="shadow-2">
+        C’est bien facile à dire « Buvez-moi, » mais Alice était trop fine pour obéir à l’aveuglette.
+      </p>
+      <p class="box" id="shadow-3">
+        C’est bien facile à dire « Buvez-moi, » mais Alice était trop fine pour obéir à l’aveuglette.
+      </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The box model</title>
+
+	<style>
+
+		html {
+			font-size: 20px;
+			font-family: sans-serif;
+		}
+		body {
+			margin: 3em;
+		}
+		section {
+			width: 400px;
+			min-height: 200px;
+
+			padding: 2em;
+			border: 1em solid black;
+			margin: 1em auto;
+			background-color: antiquewhite;
+
+		}
+		h3 {
+			margin: 0 auto;
+			background: rgb(233, 45, 200);
+			text-align: center;
+			width: 200px;
+			outline: 2em solid #444;
+			outline-color: aquamarine;
+			outline-style: inset;
+		}
+		#one {
+			box-sizing: border-box;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<h3>this h3</h3>
+	<section id="one">
+		<div>
+			box-sizing: <strong>content-box</strong>; <br>
+			width = 400 + 40 + 40 = 480px <br>
+			height = 200 + 40 + 40 = 280px
+		</div>
+	</section>
+
+	<section id="two">
+		<div>
+			box-sizing: <strong>border-box</strong>; <br>
+			width = 400px <br>
+			height = 200px
+		</div>
+	</section>
+
+</body>
+
+</html>

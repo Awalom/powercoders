@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>membership | form </title>
+  <style>
+    .row {
+      display: flex;
+      padding: 10px 10px 10px 20px;
+    }
+    .membership-form {
+      margin: 0 auto;
+      max-width: 800px;
+      background-color: bisque;
+    }
+    .C2 {
+      flex: 1;
+    }
+    .C1 {
+      display: block;
+      width: 150px;
+      text-align: right;
+      line-height: 30px;
+    }
+    h3 {
+      text-align: center;
+      padding: 20px;
+      text-decoration: underline;
+    }
+    .C1, C2 {
+      height: 30px;
+      border-radius: 5px;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    
+    <form class="membership-form" action="">
+      <h3>Membership Registration form</h3>
+      <div class="row">
+        <label class="C1" for="f_name">First Name:</label>
+        <input id="f_name" name="f_name" class="C2" type="text" placeholder="First name">
+      </div>
+      <div class="row">
+        <label class="C1" for="l_name">Last Name:</label>
+        <input id="f_name" name="l_name" class="C2" type="text" placeholder="Last name">
+      </div>
+      <div class="row">
+        <label class="C1" for="address">Address:</label>
+        <input id="f_name" name="address" class="C2" type="text" placeholder="Addresss">
+      </div>
+      <div class="row"><label class="C1" for="email">E-mail Address:</label>
+        <input id="email" name="email" class="C2" type="text" placeholder="E-mail:">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

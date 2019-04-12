@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style_form.css">
+  <title>form</title>
+</head>
+
+<body>
+  
+  <div class="form-container">
+      <form id="theform" action="">
+          <h2> Membership form </h2>
+          <div class="row">
+            <div class="cell"><label for="fn"> First Name: </label></div>
+            <div class="cell"><input class="text-box" id="ln" name="fr" type="text" value="" placeholder="First name"></div>
+            <br> <br>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="fr"> Last Name: </label> </div>
+            <div class="cell"><input class="text-box" id="ln" name="ln" type="text" value="" placeholder="Last Name"></div>
+            <br> <br>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="email"> Email Addres: </label></div>
+            <div class="cell"><input class="text-box" id="email" name="ln" type="email" value=""
+                placeholder="gofast@goslow.com"></div>
+            <br> <br>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="password"> Password: </label></div>
+            <div class="cell"><input class="text-box" id="passwor" name="passwor" type="password" value=""
+                placeholder="passwor"></div>
+            <br> <br>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="fr"> Nationality: </label></div>
+            <div class="cell">
+              <select class="text-box" name="Nationality" id="">
+                <option value="Eritrea"> Eritrea </option>
+                <option value="Sudan">Sudan</option>
+                <option value="Ethiopia">Ethiopia</option>
+              </select>
+            </div>
+            <br> <br>
+          </div>
+      
+          <div class="row">
+            <div class="cell"> <label for="dob"> Date of Birth: </label> </div>
+            <div class="cell"><input class="text-box" id="dob" name="dob" type="date"></div>
+            <br> <br>
+          </div>
+      
+          <div class="row">
+            <div class="cell"> Gender: </p>
+            </div>
+            <div class="cell">Male: <input id="male" name="sex" type="radio"></div>
+            <div class="cell">Female: <input id="female" name="sex" type="radio"></div>
+          </div>
+      
+          <div class="row">
+            <div class="cell"><input type="submit"></div>
+          </div>
+        </form>
+  </div>
+
+</body>
+
+</html>

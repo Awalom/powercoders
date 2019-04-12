@@ -1,0 +1,119 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.01;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* CUSTOM RESET
+-------------------------------------------------------------------------- */
+
+/*Mettre Box Sizing "border-box" par défaut */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  Box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1.01;
+  word-spacing: 1.01;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: aquamarine;
+  transition: color .3s ease;
+  outline: none;
+}
+
+a:hover {
+  border-bottom: 2px solid brown;
+}
+
+/*       MY CLASS COLLECTIONS
+  =================================================================*/
+
+.B .bold {
+  font-weight: bold;
+  color: inherit;
+}
+
+.I .italic {
+  font-style: italic;
+}
+.flex_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_menue_items {
+  text-align: center;
+}
+
+/*           LAYOUT ELEMENTS AND CONTAINERS
+  ===================================================================*/
+
+header {
+  width: 100%;
+}
+nav {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+article {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}

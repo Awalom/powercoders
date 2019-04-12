@@ -1,0 +1,217 @@
+/*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+-------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* CUSTOM RESET
+-------------------------------------------------------------------------- */
+
+/*Mettre Box Sizing "border-box" par défaut */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  Box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1.01;
+  word-spacing: 1.01;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: aquamarine;
+  transition: color .3s ease;
+  outline: none;
+}
+
+a:hover {}
+
+/*       MY CLASS COLLECTIONS
+  =================================================================*/
+
+.B .bold {
+  font-weight: bold;
+  color: inherit;
+}
+
+.I .italic {
+  font-style: italic;
+}
+
+/*           LAYOUT ELEMENTS AND CONTAINERS
+  ===================================================================*/
+
+header {
+  width: 100%;
+}
+nav {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+article {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+/*      LAYOUT PAGES        
+===========================================================================*/
+
+/*      INDEX PAGE  
+===========================================================================*/
+
+/*      ABOUT US PAGE       
+===========================================================================*/
+
+
+/*      CONTACT US PAGES        
+===========================================================================*/
+.wrapper {
+  max-width: 700px;
+  margin: 10px auto;
+  background: #6465a5;
+  padding: 10px 40px;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+.wrapper > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 35px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+
+}
+.cells2 .fab {
+  font-size: 30px;
+  color: grey;
+  margin:  20px;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 10px;
+  
+}
+.cells2 .fab:hover {
+  color: white;
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.contact {
+  font-size: 30px;
+  color: white;
+}
+.contact-text{
+  font-size: 12px;
+}
+.contact-text:hover {
+  transform: scale(1.5);
+  background-color: black;
+}
+.text-label {
+  font-size: 14px;
+  text-align: left;
+}
+#lastname, #firstname {
+  width: 260px;
+  height: 30px;
+}
+.comment {
+  width: 620px;
+  height: 50px;
+  margin-bottom: 0px;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  color: royalblue;
+  display: block;
+}
+
+
+
+
+/*      OTHER PAGES        
+===========================================================================*/
+
+/*      MEDIA QUERY       
+===========================================================================*/
+
+@media (max-width: 800px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 400px) {}

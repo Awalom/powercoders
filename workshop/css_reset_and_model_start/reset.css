@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  Box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.01;
+    word-spacing: 1.01;
+    
+  }
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    color: aquamarine;
+    transition: color .3s ease;
+    outline: none;
+  }
+
+  a:hover {
+
+  }
+
+  /*       MY CLASS COLLECTIONS
+  =================================================================*/
+  .B, .bold {
+    font-weight: bold;
+    color: inherit;  
+  }
+
+  /*           LAYOUT ELEMENTS AND CONTAINERS
+  ===================================================================*/
+  header {
+    width: 100%;
+  }
+nav {
+  width: 100%;
+
+}
+main {
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+article {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+
+/*      CONTACT US PAGES        
+===========================================================================*/
+.wrapper {
+  max-width: 700px;
+  margin: 10px auto;
+  background: #6465a5;
+  padding: 40px;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+
+/*      OTHER PAGES        
+===========================================================================*/
+
+/*      MEDIA QUERY       
+===========================================================================*/
+
+@media (max-width: 800px) {
+
+}
+@media (max-width: 600px) {
+  
+}
+@media (max-width: 400px) {
+  
+}
+
+
+
+
