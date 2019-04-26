@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pseudo Elements - Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://poco.squarelabel.com/assets/common/common.css">
+    lin
+<link rel="stylesheet" href="./icomoon/style.css">
+    <style>
+
+      /* COMMON
+      ------------------------------------------*/
+      a {
+        color: #333;
+        text-decoration: none;
+        transition: color .3s ease;
+      }
+      a:hover {
+        color: #0072b5;
+        text-decoration: underline;
+      }
+      ul.icons li {
+        margin-bottom: 1em;
+      }
+
+      /* PSEUDO ELEMENTS
+      ------------------------------------------*/
+      
+
+
+      /*DECO TITLE*/
+      .deco-title {
+        text-align: center;
+      }
+
+      .deco-title::after, 
+      .deco-title::before {
+        content: "";
+        display: block;
+        width: 50%;
+        max-width: 100px;
+        height: 2px;
+        border-top: dotted 1px black;
+        margin: 1em auto;
+      }
+      .deco-title::after {
+        border-top: dotted 1px red;
+      }
+      .deco-title::before {
+        border-top: dotted 1px green;
+      }
+      
+      .icons li::before {
+        content: "\2600";
+        font-size: .8rem;
+        padding-right: 20px;
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <main>
+
+      <span class="icon-facebook">Facebook</span>
+
+      <div class="container MW-800 MA">
+        <ul class="icons">
+          <li><a href="#non">ENVELOPE</a></li>
+          <li><a href="#non">VICTORY HAND</a></li>
+          <li><a href="#non">WRITING HAND</a></li>
+          <li><a href="#non">HEAVY FOUR BALLOON-SPOKED ASTERISK</a></li>
+        </ul>
+      </div>
+
+    </main>
+
+    <!-- FOOTER - liens ressources -->
+    <footer class="footer MW-800 MA">
+      <ul>
+        <li><a href="https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements" target="_blank">MDN - Pseudo-elements</a></li>
+        <li><a href="https://css-tricks.com/pseudo-element-roundup/" target="_blank">CSS Tricks - A Whole Bunch of Amazing Stuff Pseudo Elements Can Do</a></li>
+        <li><a href="https://www.w3schools.com/charsets/ref_utf_dingbats.asp" target="_blank">W3schools - UTF-8 Dingbats</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

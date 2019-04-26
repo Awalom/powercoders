@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid</title>
+  <style>
+    .container>div {
+      border: 1px red solid;
+      /**/
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 15% auto 15%;
+      /*number of columns and size*/
+      /*grid-template-rows: 200px 100px;*/
+      /*grid-auto-flow: 100px;   this */
+      /*grid-auto-rows: 20em; */
+      /*equal row height of 20em*/
+      /*justify-items: stretch or end or start or center*/
+      /*this adjust the item horizonatly*/
+      /*align-items: star; or end or center or stretch (default)*/
+      grid-auto-rows: 100px minmax(300px, auto);
+      /*first row 100px and the rest min 300px and they can grow*/
+      /*grid-column-gap: 1em; (this will make the gap between the columns only)*/
+      grid-gap: 1em;
+      /*the gap between the columns and rows */
+      align-items: start;
+
+    }
+
+    .header {
+      grid-column: 1/4;
+      /*justify-self: center; */
+      /*start or end or center or streche (default) horizental alignment*/
+      /*align-self: center;*/
+      /* start or end or center or streche (default) vertical alignment*/
+    }
+
+    .leftside {}
+
+    .rightside {}
+
+    .footer {}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <p>header</p>
+      <div class="nav">
+        <p>nav</p>
+      </div>
+    </div>
+    <div class="leftside">
+      <p>left</p>
+    </div>
+    <div class="main">
+      <p>main</p>
+      <section>
+        <p>section 1</p>
+      </section>
+      <section>
+        <p>section 1</p>
+      </section>
+      <section>
+        <p>section 1</p>
+      </section>
+      <section>
+        <p>section 1</p>
+      </section>
+      <section>
+        <p>section 1</p>
+      </section>
+      <section>
+        <p>section 1</p>
+      </section>
+    </div>
+    <div class="rightside">
+      <p>right side</p>
+    </div>
+    <div class="footer">
+      <p>footer</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
