@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>How to install jQuery and work</title>
+</head>
+<body>
+  <h1>jQuery intro</h1>
+  <p><button>click me</button></p>
+  <p><button id="remove">remove id</button></p>
+
+
+
+  <script src="./js/jquery-3.4.1.slim.min.js"></script>
+  <script>
+    // this fanction is used by jquery so us to run the jQuery after the document is ready
+    $(function() {
+      $("button").on('click', function() {
+        $("body").addClass("bob-is-great");
+      })
+      $("#remove").on('click', function() {
+        $("body").removeClass("bob-is-great");
+      })
+      
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To do App</title>
+  <style>
+    .container {
+      display: flex;
+      flex-flow: row;
+      width: 800px;
+      margin: 0 auto;
+    }
+    .left {
+      width: 300px;
+    }
+    .right {
+      width: 500px;
+    }
+
+    .right>p {
+      border: 1px solid goldenrod;
+      width: 50%;
+      margin: 1em auto;
+      padding: 1em;
+    }
+    ul {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h3>To do List</h3>
+      <ul id="txtTodosList"></ul>
+      <p>
+        <button id="btnToggleAll" onclick="handler.toggleAll()">Toggle All todos</button>
+      </p>
+    </div>
+    <div class="right">
+      
+      <p>
+        <input id="txtTodo" type="text" value="Awalom" placeholder="Text do">
+        <!-- <input id="endDateAdd" type="date"> -->
+        <button id="btnAddTodo" onclick="handler.addTodo()"> Add Todos</button>
+      </p>
+      <!-- Change to do -->
+      <p>
+        <label for="indexTodo">Index Number:</label> <br>
+        <input id="indexTodo" type="number" value="1" min="1" placeholder="1"> <br>
+        <label for="txtNewTodo"> New Text:</label> <br>
+        <input id="txtNewTodo" type="text">
+        <button id="btnAddTodo" onclick="handler.changeTodo()"> Change Todo </button>
+      </p>
+      <!-- Delete to do -->
+      <p>
+        <input id="indexToDelete" type="number" min="1" placeholder="1">
+        <button id="btnDelete" onclick="handler.deleteTodo()"> Delete </button>
+      </p>
+      <!-- Toggle to do -->
+      <p>
+        <input id="indexToToggle" type="number" min="1" placeholder="1">
+        <button id="btnToggleTodo" onclick="handler.toggleTodo()"> Toggle Todo </button>
+      </p>
+    </div>
+  </div>
+
+
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>

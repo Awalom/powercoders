@@ -7,87 +7,133 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>grid</title>
   <style>
-    .container>div {
-      border: 1px red solid;
-      /**/
+    * {
+      margin: 0;
+      padding: 0;
     }
 
-    .container {
+    .BR-20px {
+      border-radius: 20px;
+    }
+
+    .ML-2 {
+      margin-left: 2em;
+    }
+
+    .MR-2 {
+      margin-right: 2em;
+    }
+
+    #container {
       display: grid;
-      grid-template-columns: 15% auto 15%;
-      /*number of columns and size*/
-      /*grid-template-rows: 200px 100px;*/
-      /*grid-auto-flow: 100px;   this */
-      /*grid-auto-rows: 20em; */
-      /*equal row height of 20em*/
-      /*justify-items: stretch or end or start or center*/
-      /*this adjust the item horizonatly*/
-      /*align-items: star; or end or center or stretch (default)*/
-      grid-auto-rows: 100px minmax(300px, auto);
-      /*first row 100px and the rest min 300px and they can grow*/
-      /*grid-column-gap: 1em; (this will make the gap between the columns only)*/
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 1em;
-      /*the gap between the columns and rows */
-      align-items: start;
-
     }
 
-    .header {
-      grid-column: 1/4;
-      /*justify-self: center; */
-      /*start or end or center or streche (default) horizental alignment*/
-      /*align-self: center;*/
-      /* start or end or center or streche (default) vertical alignment*/
+    #header {
+      grid-column: 1/5;
+      grid-row: 1/2;
+      position: fixed;
+      min-height: 70px;
+      width: 100%;
+      background-color: #ffaadd;
+      box-shadow: 10px 10px 10px;
+      border-radius: 20px;
     }
 
-    .leftside {}
+    #banner {
+      grid-column: 1/5;
+      grid-row: 2/3;
+      height: 400px;
+      background-color: green;
+      margin-top: 80Px;
+    }
 
-    .rightside {}
 
-    .footer {}
+    #aside {
+      grid-column: 1/2;
+      grid-row: 3/5;
+      background-color: rebeccapurple;
+      height: 400px;
+      min-width: 150px;
+    }
+
+    #main {
+      grid-column: 2/5;
+      grid-row: 3/4;
+      background-color: red;
+    }
+
+    #news {
+      grid-column: 2/5;
+      grid-row: 4/5;
+      background-color: green;
+    }
+
+    #events {
+      grid-column: 1/5;
+      grid-row: 5/6;
+      background-color: blue;
+    }
+
+    #membership {
+      grid-column: 1/3;
+      grid-row: 6/7;
+      background-color: blueviolet;
+    }
+
+    #about-us {
+      grid-column: 3/5;
+      grid-row: 6/7;
+      background-color: gold;
+    }
+
+    #footer {
+      grid-column: 1/5;
+      grid-row: 7/8;
+      background-color: black;
+    }
+
+    @media only screen and (max-width: 400px) {
+      #banner {
+        margin-top: 170px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <p>header</p>
-      <div class="nav">
-        <p>nav</p>
+  <div id="container" class="BR-20px">
+    <div id="header" class="BR-20px">
+      <div id="nav">
+        
       </div>
     </div>
-    <div class="leftside">
-      <p>left</p>
+    <div id="banner" class="BR-20px">
+      
     </div>
-    <div class="main">
+    <div id="aside" class="BR-20px ML-2">
+      <p>Asside</p>
+    </div>
+    <div id="main" class="BR-20px MR-2">
       <p>main</p>
-      <section>
-        <p>section 1</p>
-      </section>
-      <section>
-        <p>section 1</p>
-      </section>
-      <section>
-        <p>section 1</p>
-      </section>
-      <section>
-        <p>section 1</p>
-      </section>
-      <section>
-        <p>section 1</p>
-      </section>
-      <section>
-        <p>section 1</p>
-      </section>
     </div>
-    <div class="rightside">
-      <p>right side</p>
+    <div id="news" class="BR-20px MR-2">
+      <p>News</p>
     </div>
-    <div class="footer">
+    <div id="events" class="BR-20px ML-2 MR-2">
+      <p>events</p>
+    </div>
+    <div id="membership" class="BR-20px ML-2">
+      <p>membership</p>
+    </div>
+    <div id="about-us" class="BR-20px MR-2">
+      <p>About Us</p>
+    </div>
+    <div id="footer" class="BR-20px">
       <p>footer</p>
     </div>
   </div>
-
 </body>
 
 </html>
