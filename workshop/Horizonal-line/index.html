@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+  <style>
+    .name1 {
+      background: black;
+    }
+    .hrline:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background: #7B756F;
+      /* left: 0;
+      right: 0; */
+      width: 100vw;
+      top: 20px;
+      z-index: -1000;
+    }
+    .hrline {
+      position: relative;
+    }
+    .hrline span {
+      background-color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hrline">
+    <h1><span>Awalom</span></h1>
+  </div>
+  <div class="hrline">
+      <h1><span>Bereketab</span></h1>
+  </div>
+  <div class="hrline">
+      <h1><span>The developer of this line system</span></h1>
+  </div>
+  
+  
+
+
+  <!-- SCRIPT -->
+  <!-- To use JS form CDN -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous">
+  </script> -->
+
+  <!-- To you Jquery from your local machine -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+
+  <!-- link to your appliction JS file -->
+  <script src="./js/jquery-3.4.1.slim.min.js"></script>
+
+  <script>
+    $(function () {
+      $('.name').css({ background: 'red'}).css({ height: '500px'})
+      $('.name').html = "this is awalom";
+    })
+  </script>
+  
+</body>
+</html>
